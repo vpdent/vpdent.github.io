@@ -11,6 +11,9 @@
 <link rel="shortcut icon" type="image/png" href="./assets/img/tooth.png">
 
     <style>
+      html{
+        scroll-behavior: smooth;
+      }
         body{
             margin: 0;
         }
@@ -18,7 +21,7 @@
             margin-left: 300px;
         }
         ul li{
-            padding: 5px 12px;
+            padding: 5px 5px;
         }
         .navbar-brand{
             margin-left: 0;
@@ -69,97 +72,88 @@ p.copyright {
 #myBtn:hover {
   background-color: #555;
 }
-/* 
-.vp1{ 
- 
-  background-image: url("./assets/img/vp3.jpg");
 
-
-  height: 750px; 
-
-
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-} */
-
-.container{
-   display: block;
+.grid-container{
+   display: grid;
    box-sizing: border-box;
+   grid-template-columns: auto auto;
    margin: 0;
    padding: 10px;
    background: linear-gradient(115deg, rgb(128, 80, 175), rgba(146, 144, 148, 0.712) );
    object-fit: fill;
    max-width: 100%;
+   grid-row-gap: 10px;
+   justify-content: space-evenly;
+   
 
 }
 
-.row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+h1{
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
 }
-.column{
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-img .vp1{
-    max-width: 100%;
-    height: auto;
-    vertical-align: bottom;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-.text-right{
-    display: block;
-    text-align: justify;
-    color: white;
-    margin-left: 20%;
-    margin-right: 20%;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-h3, p{
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    margin:0;
-    padding: 0;
+
+#text1{
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 5px;
 
 }
-h3 {
-    display: block;
-    align-items: center;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+.grid-item{
+  align-items: center;
 }
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+#vp1{
+  align-self: center;
+  margin-left: 190px;
 }
-.apraksts{
-    line-height: 1.2rem;
-    margin: 5% 0;
+#vp2{
+  width: 276px;
+  height: 183px;
+  margin-left: 190px;
 }
+
+.pakalpojumi{
+  background: linear-gradient(115deg, rgba(165, 100, 202, 0.884), rgba(146, 144, 148, 0.712) );
+  max-width: 100%;
+}
+
+table, th{
+  border: 2px solid rgb(160, 42, 160);
+}
+table{
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: 7.5%;
+}
+
+.virsraksts{
+  height: 50px;
+  text-align: center;
+}
+#ss{
+  text-align: center;
+  font-weight: 300;
+}
+#ozonoterapija{
+  background: linear-gradient(115deg, rgba(96, 196, 110, 0.884), rgba(146, 144, 148, 0.712) );
+}
+
+.ozon{
+  width: auto;
+  height: 427px;
+}
+
+#ozon2{
+  margin-left: 80px;
+}
+
+#ozon1{
+  margin-right: 90px;
+  float: right;
+}
+
 
 
 /*  */
@@ -191,13 +185,10 @@ p {
               <a class="nav-link" href="#sakums">Sākums <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#pakalpojumi">Pakalpojumi</a>
+              <a class="nav-link" href="#pakalpojumi">Pakalpojumi un Cenrādis</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#cenradis">Cenrādis</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#specialisti">Specialisti</a>
+              <a class="nav-link" href="#ozonoterapija">Ozonoterapija</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#par mums">Par mums</a>
@@ -218,26 +209,96 @@ p {
       </nav>
 
       <main>
- <div class="container">
-            <div class="row">
-                <div class="column grid-photo">
-                    <img class="vp1" src="./assets/img/vp1.jpg" alt="vp1">
-                </div>
-                <div class="column grid-text">
-                    <div class="text-right">
-                        <h3 class="1st">Sveicināti!</h3>
-                        <p class="apraksts">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor, diam non pellentesque cursus, justo libero venenatis justo, pellentesque pellentesque lacus urna sere cubilia curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum feugiat ante nec lectus consectetur congue. Mauris vestibulum odio neque, sit amet venenatis ex finibus vitae. Morbi in purus felis. Nunc lacinia enim eget euismod porta. Cras eget tempor ligula. Mauris imperdiet urna mollis velit bibendum lacinia. Integer finibus aliquet lacinia.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row"></div>
-            <div class="row"></div>
-            
+
+        
+        
+        <div class="grid-container">
+          <h1><em>Sveicināti VipDent Zobārstniecībā!</em></h1>
+          <br>
+          <div class="grid-row">
+            <div class="grid-item"><img src="./assets/img/vp1.jpg" alt="vp1" id="vp1"></div>
+
+            <div class="grid-item" id="text1"><p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus commodo pulvinar. Sed tempus vulputate nunc, a blandit lectus sodales vitae. In hac habitasse platea dictumst. Fusce pharetra lorem nec dolor commodo vulputate. 
+              <p>
+                eu posuere ante. Morbi gravida, augue id pretium molestie, mauris est finibus sem, et pellentesque nisi libero vel tellus. Proin pulvinar in risus a vulputate. Morbi non pellentesque risus. Nulla facilisi. Mauris in eleifend turpis. Cras mauris lacus, tincidunt at porttitor id, maximus vel risus. In id condimentum libero. Duis molestie porttitor nisi nec ultricies.
+              </p> 
+            </p></div>
+          </div>
+
+          <div class="grid-row">
+            <div class="grid-item" id="text1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus commodo pulvinar. Sed tempus vulputate nunc, a blandit lectus sodales vitae. In hac habitasse platea dictumst. Fusce pharetra lorem nec dolor commodo vulputate. Vivamus eu posuere ante. Morbi gravida, augue id pretium molestie, mauris est finibus sem, et pellentesque nisi libero vel tellus. Proin pulvinar in risus a vulputate. Morbi non pellentesque risus. Nulla facilisi. Mauris in eleifend turpis. Cras mauris lacus, tincidunt at porttitor id, maximus vel risus. In id condimentum libero. Duis molestie porttitor nisi nec ultricies.</p></div>
+
+            <div class="grid-item"><img src="./assets/img/vp3.jpg" alt="vp1" id="vp1"></div>
+          </div>
+          
+          <div class="grid-row">
+            <div class="grid-item"><img src="./assets/img/vp2.jpg" alt="vp1" id="vp1"></div>
+
+            <div class="grid-item" id="text1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus commodo pulvinar. Sed tempus vulputate nunc, a blandit lectus sodales vitae. In hac habitasse platea dictumst. Fusce pharetra lorem nec dolor commodo vulputate. Vivamus eu posuere ante. Morbi gravida, augue id pretium molestie, mauris est finibus sem, et pellentesque nisi libero vel tellus. Proin pulvinar in risus a vulputate. Morbi non pellentesque risus. Nulla facilisi. Mauris in eleifend turpis. Cras mauris lacus, tincidunt at porttitor id, maximus vel risus. In id condimentum libero. Duis molestie porttitor nisi nec ultricies.</p></div>
+          </div>
+
+
+          <div class="grid-row">
+            <div class="grid-item" id="text1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus commodo pulvinar. Sed tempus vulputate nunc, a blandit lectus sodales vitae. In hac habitasse platea dictumst. Fusce pharetra lorem nec dolor commodo vulputate. Vivamus eu posuere ante. Morbi gravida, augue id pretium molestie, mauris est finibus sem, et pellentesque nisi libero vel tellus. Proin pulvinar in risus a vulputate. Morbi non pellentesque risus. Nulla facilisi. Mauris in eleifend turpis. Cras mauris lacus, tincidunt at porttitor id, maximus vel risus. In id condimentum libero. Duis molestie porttitor nisi nec ultricies.</p></div>
+
+            <div class="grid-item"><img src="./assets/img/vp4.jpg" alt="vp1" id="vp2"></div>
+          </div>
         </div>
 
-<!-- 
-        <div class="vp1"></div> -->
-    
+        <div class="pakalpojumi">
+
+          <h1 id="pakalpojumi"><em>Pakalpojumi</em></h1>
+
+          <table>
+            <tr>
+              <th class="virsraksts">Pakalpojums</th>
+              <th class="virsraksts">Apraksts</th>
+              <th class="virsraksts">Cena</th>
+            </tr>
+            <tr>
+              <th id="ss">Konsultācija</th>
+              <th>..........</th>
+              <th>..........</th>
+            </tr>
+            <tr>
+              <th id="ss">Higiena</th>
+              <th>.......</th>
+              <th>..........</th>
+            </tr>
+            <tr>
+              <th id="ss">Zoba izraušana</th>
+              <th>.......</th>
+              <th>..........</th>
+            </tr>
+            <tr>
+              <th id="ss">Balināšana</th>
+              <th>.......</th>
+              <th>..........</th>
+            </tr>
+          </table>
+          <br>
+        </div>
+
+        <div id="ozonoterapija">
+
+
+        <h1><em>Ozonoterapija</em></h1>
+
+        <img src="./assets/img/ozon.png" alt="ozon" class="ozon" id="ozon2">
+        <img src="./assets/img/o6.png" alt="ozon" class="ozon" id="ozon1">
+
+        <p class="ozontext">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus commodo pulvinar. Sed tempus vulputate nunc, a blandit lectus sodales vitae. In hac habitasse platea dictumst. Fusce pharetra lorem nec dolor commodo vulputate. Vivamus eu posuere ante. Morbi gravida, augue id pretium molestie, mauris est finibus sem, et pellentesque nisi libero vel tellus. Proin pulvinar in risus a vulputate. Morbi non pellentesque risus. Nulla facilisi. Mauris in eleifend turpis. Cras mauris lacus, tincidunt at porttitor id, maximus vel risus. In id condimentum libero. Duis molestie porttitor nisi nec ultricies.
+        </p>
+          
+        </div>
+
+
+
+        
+
+
       </main>
 
 
