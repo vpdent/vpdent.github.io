@@ -28,13 +28,16 @@
         }
         .logo{
             height: 50px;
-            margin-left: 15px;
+      
         }
         ul li a{
             font-family: Arial, Helvetica, sans-serif;
             font-weight: 400;
             letter-spacing: 1px;
+            
+           
         }
+
 
         footer {
 	position: relative;
@@ -96,9 +99,11 @@ h1{
 
 #text1{
   font-weight: 600;
-  font-size: 15px;
+  font-size: 12px;
   text-align: center;
   margin-top: 5px;
+  margin-bottom: 10px;
+  color: aqua;
 
 }
 .grid-item{
@@ -117,6 +122,7 @@ h1{
 .pakalpojumi{
   background: linear-gradient(115deg, rgba(165, 100, 202, 0.884), rgba(146, 144, 148, 0.712) );
   max-width: 100%;
+  margin-top: 0px;
 }
 
 table, th{
@@ -154,6 +160,37 @@ table{
   float: right;
 }
 
+.stom{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.stom1{
+  background-color: rgb(134, 68, 165);
+  opacity: .5;
+  line-height: 20px;
+  
+}
+.stom2{
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  color: black;
+  font-size: 15px;
+}
+ul li a:hover {
+  background-color: rgb(194, 166, 131);
+  border-radius: 2px;
+  opacity: .8;
+}
+ul li ul li {
+  display: none;
+}
+ul li:hover ul li{
+  display: block;
+}
+p{
+  margin-bottom: 0px;
+}
 
 
 /*  */
@@ -185,14 +222,20 @@ table{
               <a class="nav-link" href="#sakums">Sākums <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#stom">Stomatoloģija</a>
+              <ul class="stom">
+                <li class="stom1"><a href="" class="stom2">Zobu higiena</a></li>
+                <li class="stom1"><a href="" class="stom2">Zobu plombēšana</a></li>
+                <li class="stom1"><a href="" class="stom2">Zobu protezēšana</a></li>
+                <li class="stom1"><a href="" class="stom2">Zobu balināšana</a></li>
+              </ul>
+            </li> 
+            <li class="nav-item">
               <a class="nav-link" href="#pakalpojumi">Pakalpojumi un Cenrādis</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#ozonoterapija">Ozonoterapija</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#par mums">Par mums</a>
-              </li> 
             <li class="nav-item">
               <a class="nav-link" href="#contacts">Kontakti</a>
             </li> 
@@ -216,38 +259,101 @@ table{
           <h1><em>Sveicināti VipDent Zobārstniecībā!</em></h1>
           <br>
           <div class="grid-row">
-            <div class="grid-item"><img src="./assets/img/vp1.jpg" alt="vp1" id="vp1"></div>
-
             <div class="grid-item" id="text1"><p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus commodo pulvinar. Sed tempus vulputate nunc, a blandit lectus sodales vitae. In hac habitasse platea dictumst. Fusce pharetra lorem nec dolor commodo vulputate. 
-              <p>
-                eu posuere ante. Morbi gravida, augue id pretium molestie, mauris est finibus sem, et pellentesque nisi libero vel tellus. Proin pulvinar in risus a vulputate. Morbi non pellentesque risus. Nulla facilisi. Mauris in eleifend turpis. Cras mauris lacus, tincidunt at porttitor id, maximus vel risus. In id condimentum libero. Duis molestie porttitor nisi nec ultricies.
-              </p> 
+          
+              Mūsu firma sniedz pakalpojumus plaša spektra Stomatoloģijā: Ārstēšana, Protēzēšana, Implantologija, Mutes dobuma higiena ar Castellini aparatūru (Anti HIV sistēmu),  Zobu balināšana. 
+
+              Mūsu praksē izmantojam tikai augstas kvalitātes materiālus no Japānas, ASV, Šveices! Sertificēts ārstu personāls ar lielu darba pieredzei. Ārsti patstāvīgi apmeklē apmācības kursus ārzemēs .
+              Personas ar funkcionāliem traucējumiem, kas vēlas saņemt pakalpojums mūsu klīnikā ir iepriekš (24h) jābrīdina klīnikas personāls par to ka ir nepieciešama palīdzība, lai nokļūtu līdz pakalpojumu sniegšanas vietai. Šādos gadījumos tiek izsaukts speciāls dienests(SJP), kas palīdz personām ar funkcionāliem traucējumiem nokļūt līdz pakalpojumu sniegšanas vietai. Pakalpojums ir pilnībā bez maksas.
+            
             </p></div>
+            <div class="grid-item"><img src="./assets/img/vp3.jpg" alt="vp1" id="vp1"></div>
+
           </div>
 
           <div class="grid-row">
-            <div class="grid-item" id="text1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus commodo pulvinar. Sed tempus vulputate nunc, a blandit lectus sodales vitae. In hac habitasse platea dictumst. Fusce pharetra lorem nec dolor commodo vulputate. Vivamus eu posuere ante. Morbi gravida, augue id pretium molestie, mauris est finibus sem, et pellentesque nisi libero vel tellus. Proin pulvinar in risus a vulputate. Morbi non pellentesque risus. Nulla facilisi. Mauris in eleifend turpis. Cras mauris lacus, tincidunt at porttitor id, maximus vel risus. In id condimentum libero. Duis molestie porttitor nisi nec ultricies.</p></div>
 
-            <div class="grid-item"><img src="./assets/img/vp3.jpg" alt="vp1" id="vp1"></div>
+            <div class="grid-item"><img src="./assets/img/vp1.jpg" alt="vp1" id="vp1"></div>
+          
+            <div class="grid-item" id="text1"><p>Zobu higiēna ir profilaktiska zobārstniecības procedūra, kurai ir ļoti svarīga nozīme labas zobu un smaganu veselības saglabāšanai. Zobu higiēnista apmeklējums vismaz divas reizes gadā pacientam ļauj regulāri kontrolēt savu zobu veselību un uzturēt zobus veselus. Zobu higiēnas procedūras laikā ar speciāliem zobārstniecības instrumentiem un medicīniskiem līdzekļiem tiek iztīrītas visas grūti sasniedzamās mutes dobuma daļas, likvidējot kaitīgās zobu aplikuma baktērijas un zobakmeni, kas ir galvenie zobu un smaganu problēmas izraisošie faktori.</p></div>
+            
           </div>
           
           <div class="grid-row">
-            <div class="grid-item"><img src="./assets/img/vp2.jpg" alt="vp1" id="vp1"></div>
 
-            <div class="grid-item" id="text1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus commodo pulvinar. Sed tempus vulputate nunc, a blandit lectus sodales vitae. In hac habitasse platea dictumst. Fusce pharetra lorem nec dolor commodo vulputate. Vivamus eu posuere ante. Morbi gravida, augue id pretium molestie, mauris est finibus sem, et pellentesque nisi libero vel tellus. Proin pulvinar in risus a vulputate. Morbi non pellentesque risus. Nulla facilisi. Mauris in eleifend turpis. Cras mauris lacus, tincidunt at porttitor id, maximus vel risus. In id condimentum libero. Duis molestie porttitor nisi nec ultricies.</p></div>
+            <div class="grid-item" id="text1"><p>Skaists, žilbinošs un apburošs smaids? Protams, kurš no mums gan nesapņo par tādu! Bet kafijas, tējas, vīna, tabakas un antibiotiku lietošana ietekmē zobu emalju, un tā rezultātā zobi vairs nav ne tik balti, ne skaisti, Tomēr atgūt savu žilbinošo smaidu tu vari dažu stundu laikā ar ZOOM!
+
+              ZOOM! - viens no saudzīgākajiem zobu balināšanas veidiem, jaunākās paaudzes profesionāla zobu balināšanas sistēma, kas nepilnu 2h laikā spēj padarīt smaidu līdz pat astoņiem toņiem gaišāku.</p></div>
+
+              <div class="grid-item"><img src="./assets/img/vp4.jpg" alt="vp1" id="vp2"></div>
+
+          
           </div>
 
 
           <div class="grid-row">
-            <div class="grid-item" id="text1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus commodo pulvinar. Sed tempus vulputate nunc, a blandit lectus sodales vitae. In hac habitasse platea dictumst. Fusce pharetra lorem nec dolor commodo vulputate. Vivamus eu posuere ante. Morbi gravida, augue id pretium molestie, mauris est finibus sem, et pellentesque nisi libero vel tellus. Proin pulvinar in risus a vulputate. Morbi non pellentesque risus. Nulla facilisi. Mauris in eleifend turpis. Cras mauris lacus, tincidunt at porttitor id, maximus vel risus. In id condimentum libero. Duis molestie porttitor nisi nec ultricies.</p></div>
+            <div class="grid-item"><img src="./assets/img/vp2.jpg" alt="vp1" id="vp1"></div>
+            <div class="grid-item" id="text1"><p>Zobu protezēšana ļauj kvalitatīvi restaurēt dažādu iemeslu dēļ zaudētus dabīgos zobus, atjaunojot to funkcionalitāti un estētiskās īpašības. Zobu protezēšanā tiek izmantotas gan izņemamās zobu protēzes (zobu plates), gan neizņemamas konstrukcijas – zobu kroņi un zobu tilti.</p></div>
 
-            <div class="grid-item"><img src="./assets/img/vp4.jpg" alt="vp1" id="vp2"></div>
+            
           </div>
         </div>
 
-        <div class="pakalpojumi">
+        <div id="ozonoterapija">
 
+
+        <h1><em>Ozonoterapija</em></h1>
+
+        <img src="./assets/img/ozon.png" alt="ozon" class="ozon" id="ozon2">
+        <img src="./assets/img/o6.png" alt="ozon" class="ozon" id="ozon1">
+
+        <p class="ozontext">
+
+          <h3>Kas ir ozons?</h3>
+          
+          Ozons ir skābeklis izmainītā veidā - viena ozona molekula satur trīs skābekļa atomus. Ozonam ir ļoti izteikts oksidēšanās efekts, tādēļ to klasificē kā aktīvo skābekli. Ozons ir atmosfēras dabīgā sastāvdaļa.
+
+          <br><br>
+
+          <h3>Kā var iegūt ozonu?</h3>
+
+          Ar ģeneratora palīdzību tiek iegūta augsta elektriskā izlāde, kas, saskaroties ar tīro skābekli, veido ozonu. V.Siemens pirmo reizi šo metodi pielietoja 1857. gadā. Šī ozona iegūšanas metode ir saglabājusies līdz mūsdienām. Pēdējā laika ir palielinājusies interese par nemedikamentozām ārstniecības metodēm, kas var samazināt nepieciešamību lietot dažādus preparātus un vienlaicīgi iedarboties uz saslimšanas procesu.
+          
+          Ozonoterapija ir ārstnieciska metode, kas pēdējo gadu laika ir guvusi plašu pielietojumu klīniskajā praksē. Ozonam piemīt daudzveidīgi terapeitiskie efekti, - antibakteriālais, pretvīrusu, pretiekaisuma un imunomodulējošais. Tas uzlabo mikrocirkulāciju, piedalās tauku oksiģenācijā un palielina organisma aizsargspējas. Šīs īpašības dod iespēju ārstēt vesalu virkni slimību. Pirmo reizi ozonu, kā antiseptisku līdzkli, pielietoja Pirmā pasaules kara laikā 1915. gadā.
+
+          <br><br>
+          
+          <h3>Kā ozons ietekmē cilvēka organismu?</h3>
+
+
+          <p>
+            Tas palīdz aknām neitralizēt toksiskas vielas, sadala taukvielas (holesterīnu un triglicerīdus), kuras nelabvēlīgi ietekmē asinsvadus (miakarda infarkts, insults). Ozons uzlabo vielmaiņas procesus šūnās, kā āri palielina tajās iegūstamo enerģijas daudzumu. Pazemina urīnskābes līmeni, uzlabo asinsriti, likvidē visu veidu baktērijas, vīrusus un sēnītes! Indikācijas - stomatoloģija - paradontīta ārstēšana, visu locītavu artrozes, vīrusu vai alkohola nodarītos aknu bojājumus, asinsrites traucējumus, insulta ārstēšana, reimatiskas saslimšanas, paaugstinātu taukvielu daudzumu asinīs, onkoloģisko saslimšanu palīgterapija, smagu un ilgstošu saslimšanu seku likvidācija, visu acu slimību profilakse, kas saistītas ar asinsrites traucējumiem, migrēnas, vispārēju nespēku, alerģiskas un strutojošas ādas slimības, furunkulozi, bronhiālo astmu, psoriāzes, zarnu gļotādas iekaisumus, aknu saslimšanas. Blakusparādības nav novērotas.
+          </p><br><br>
+          
+
+          
+          <p>
+            Ozonterapiju veiksmīgi izmanto gan ASV, gan Rietumeiropā, Ķīnā, Krievijā.
+            <br>
+            Mūsu klīnikā piedāvājam veikt šo procedūru ar Vācijā ražotu aparatūru ”HERRMANN”, kā arī esam ši ražotāja oficiālais pārstāvis.
+            <br>
+            Klīnikas vadītāja  Dr. V. Pobegusa pirmā apstiprinājusi medicīnisko tehnoloģiju <strong>GINGIVĪTA,  PARODONTĪTA  UN  PARADONTOZES  OZONTERAPIJA</strong>”  Nacionālaja Veselības dienestā Latvijā.
+          </p><br><br>
+          
+
+          <p>
+            Ozonterapijas pielietošana kompleksajā parodonta iekaisuma slimību terapijā tiek panākts ozona pretiekaisuma un oksidēšanās efekts, kas nodrošina antibakteriālu iedarbību, kas nepieciešama ārstēšanas un profilakses procesā. Ir pierādīts, ka mutes dobuma skalošana ar ozonētu destilētu ūdeni vai fizioloģisko šķīdumu profesionālās higiēnas procedūras laikā uzlabo mutes dobuma higiēniskos rādītājus pateicoties efektīvai iedarbībai uz zobu mīkstā aplikuma mikrofloru, tādā veidā aizkavējot kariesa un parodonta slimību attīstību. Ozonēto šķīdumu lietošana samazina mīkstā zobu aplikuma daudzumu, veicina gļotu šķīšanu. Ozonterapijas rezultātā samazinās parodonta higiēniskais indekss. Organisma aizsargspēju un atveseļošanās procesa paātrināšanai, kā arī smagos paradonta iekaisuma slimību gadījumos ieteicama parenterāla ozonēta fizioloģiska šķīduma ievade.
+
+          </p><br><br>
+          <p>
+            Lokāla ozonēta destilēta ūdens , fiziploģiskā šķīduma un ozonētas eļļas lietošana terapijā pacientiem ar gingivītu un hronisku ģeneralizētu parodontītu dažādāš pakāpēs ir augstu efektīva. Interese par  nemedikamentozām terapijas metodēm, pie kuras pieskaitāma arī ozonoterapija, ir palielinājusies vairāku faktoru ietekmē. Pirmkārt, saistībā ar alerģisku reakciju pieaugumu, otrkārt, palielinās antibiotiku rezistento baktēriju skaits, kas ierobežo terapijas iespējas! Plaša ozona izmantošana profilaktiskos un ārstnieciskos nolūkos, tā augstā klīniskā efektivitāte, laba panesamība, relatīvi nelielās izmaksas – sekmē zonterapijas izmantošanu kombinācijā ar citām ārstēšanas metodēm.
+          </p><br><br>
+        
+        </p>
+          
+        </div>
+
+        <div class="pakalpojumi">
           <h1 id="pakalpojumi"><em>Pakalpojumi</em></h1>
 
           <table>
@@ -278,20 +384,6 @@ table{
             </tr>
           </table>
           <br>
-        </div>
-
-        <div id="ozonoterapija">
-
-
-        <h1><em>Ozonoterapija</em></h1>
-
-        <img src="./assets/img/ozon.png" alt="ozon" class="ozon" id="ozon2">
-        <img src="./assets/img/o6.png" alt="ozon" class="ozon" id="ozon1">
-
-        <p class="ozontext">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus commodo pulvinar. Sed tempus vulputate nunc, a blandit lectus sodales vitae. In hac habitasse platea dictumst. Fusce pharetra lorem nec dolor commodo vulputate. Vivamus eu posuere ante. Morbi gravida, augue id pretium molestie, mauris est finibus sem, et pellentesque nisi libero vel tellus. Proin pulvinar in risus a vulputate. Morbi non pellentesque risus. Nulla facilisi. Mauris in eleifend turpis. Cras mauris lacus, tincidunt at porttitor id, maximus vel risus. In id condimentum libero. Duis molestie porttitor nisi nec ultricies.
-        </p>
-          
         </div>
 
 
