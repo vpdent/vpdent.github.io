@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stomatoloģija</title>
+
+       <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<link rel="shortcut icon" type="image/png" href="./assets/img/tooth.png">
+
+<style>
+      html{
+        scroll-behavior: smooth;
+      }
+        body{
+            margin: 0;
+        }
+        ul{
+            margin-left: 300px;
+        }
+        ul li{
+            padding: 5px 5px;
+        }
+        .navbar-brand{
+            margin-left: 0;
+        }
+        .logo{
+            height: 50px;
+      
+        }
+        ul li a{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            letter-spacing: 1px;
+            
+           
+        }
+
+
+        /* footer {
+	position: relative;
+	height: 100px;
+	width: 100%;
+	background-color: rgb(187, 100, 161);
+}
+
+p.copyright {
+	position: absolute;
+	width: 100%;
+	color: black;
+	line-height: 40px;
+	font-size: 0.7em;
+	text-align: center;
+	bottom:0;
+} */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:  rgb(187, 100, 161);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/* .grid-container{
+   display: grid;
+   box-sizing: border-box;
+   grid-template-columns: auto auto;
+   margin: 0;
+   padding: 10px;
+   background: linear-gradient(115deg, rgb(128, 80, 175), rgba(146, 144, 148, 0.712) );
+   object-fit: fill;
+   max-width: 100%;
+   grid-row-gap: 10px;
+   justify-content: space-evenly;
+   
+
+} */
+
+h1{
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+}
+
+#text1{
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: aqua;
+
+}
+.grid-item{
+  align-items: center;
+}
+#vp1{
+  align-self: center;
+  margin-left: 190px;
+}
+#vp2{
+  width: 276px;
+  height: 183px;
+  margin-left: 190px;
+}
+
+.pakalpojumi{
+  background: linear-gradient(115deg, rgba(165, 100, 202, 0.884), rgba(146, 144, 148, 0.712) );
+  max-width: 100%;
+  margin-top: 0px;
+}
+
+table, th{
+  border: 2px solid rgb(160, 42, 160);
+}
+table{
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: 7.5%;
+}
+
+.virsraksts{
+  height: 50px;
+  text-align: center;
+}
+#ss{
+  text-align: center;
+  font-weight: 300;
+}
+#ozonoterapija{
+  background: linear-gradient(115deg, rgba(96, 196, 110, 0.884), rgba(146, 144, 148, 0.712) );
+}
+
+.ozon{
+  width: auto;
+  height: 427px;
+}
+
+#ozon2{
+  margin-left: 80px;
+}
+
+#ozon1{
+  margin-right: 90px;
+  float: right;
+}
+
+.stom{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.stom1{
+  background-color: rgb(134, 68, 165);
+  opacity: .5;
+  line-height: 20px;
+  
+}
+.stom2{
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  color: black;
+  font-size: 15px;
+}
+ul li a:hover {
+  background-color: rgb(194, 166, 131);
+  border-radius: 2px;
+  opacity: .8;
+}
+ul li ul li {
+  display: none;
+}
+ul li:hover ul li{
+  display: block;
+}
+
+</style>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(187, 100, 161);" >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#welcome1"><img src="./assets/img/logofinal.png" alt="logonew" class="logo"></a>
+
+        <!-- <a href=""><img src="./assets/img/logofinal.png" alt="logonew"></a> -->
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Sākums <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#stom1">Stomatoloģija</a>
+              <ul class="stom">
+                <li class="stom1"><a href="" class="stom2">Zobu higiena</a></li>
+                <li class="stom1"><a href="" class="stom2">Zobu plombēšana</a></li>
+                <li class="stom1"><a href="" class="stom2">Zobu protezēšana</a></li>
+                <li class="stom1"><a href="" class="stom2">Zobu balināšana</a></li>
+              </ul>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#pakalpojumi">Pakalpojumi un Cenrādis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ozonoterapija">Ozonoterapija</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Kontakti</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="#language">LV</a>
+              </li> 
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
+
+      </nav>
+
+      <main>
+
+      </main>
+    
+
+
+
+      
+            <!-- <div id="footer"></div>
+			<footer>
+    <p class="copyright">©Vipdent 2020</p>
+      </footer>
+        </div> -->
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Uz Augšu</button>
+
+      
+    <script>
+     mybutton = document.getElementById("myBtn");
+      
+      window.onscroll = function() {scrollFunction()};
+    
+      function scrollFunction(){
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+      }
+    
+      function topFunction() {
+      document.body.scrollTop = 0; 
+      document.documentElement.scrollTop = 0; 
+    }
+
+    </script>
+</body>
+</html>
