@@ -3,257 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>VipDent</title>
 
-        <!-- CSS only -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
+   
 <link rel="shortcut icon" type="image/png" href="./assets/img/tooth.png">
 
-    <style>
-      html{
-        scroll-behavior: smooth;
-      }
-      body{
-            margin: 0;
-            background-color: cadetblue;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 500;
-        }
-        .container{
-            width: 80%;
-            margin: 0 auto;
-        }
-        header{
-            background-color: pink;
-        }
-        header ::after{
-            content: '';
-            display: table;
-            clear: both;
-        }
-        .logo{
-            float: left;
-            padding: 10px 0;
-        }
-        nav{
-            float: right;
-        }
-        nav ul{
-           margin: 0; 
-           padding: 0;
-           list-style: none;
-           display: flex;
-        }
-        nav li{
-            display: inline-block;
-            margin-left: 60px;
-            padding-top: 40px;
-
-            position: relative;
-
-            list-style: none;
-        }
-
-        nav a{
-            color: royalblue;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 14px;
- 
-        }
-
-        nav a:hover{
-            color: salmon;
-        }
-
-        nav a::before{
-            content: '';
-            display: block;
-            height: 5px;
-            width: 100%;
-            background-color: rgb(214, 126, 85);
-
-            position: absolute;
-            top: 0;
-            width: 0%;
-            transition: all ease-in-out 250ms;;
-        }
-
-        nav a:hover::before{
-            width: 100%;
-        }
-        .toggle-button {
-            position: absolute;
-            top: .75rem;
-            right: 1rem;
-            display: none;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 30px;
-            height: 21px;
-        }
-        .toggle-button .bar{
-            height: 3px;
-            width: 100%;
-            background-color: white;
-            border-radius: 10px;
-        }
-
-        @media (max-width: 600px){
-            .toggle-button{
-                display: flex;
-            }
-            .navbar-links{
-                display: none;
-                width: 100%;
-                margin-right: 280px;
-            }
-
-            nav{
-                flex-direction: column;
-                align-items: flex-start;
-                
-            }
-
-            .navbar-links ul{
-                width: 100%;
-                flex-direction: column;
-            }
-            .navbar-links li{
-                text-align: center;
-                padding: 10px 0;
-            }
-
-            .navbar-links a{
-                padding: .5rem 1rem;
-            }
-            .navbar-links.active{
-                display: flex;
-            }
-            
-        }
-        
 
 
-        footer {
-	position: relative;
-	height: 100px;
-	width: 100%;
-	background-color: rgba(240, 217, 217, 0.925);
-}
-
-p.copyright {
-	position: absolute;
-	width: 100%;
-	color: black;
-	line-height: 40px;
-	font-size: 0.7em;
-	text-align: center;
-	bottom:0;
-}
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color:  rgb(187, 100, 161);
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-#myBtn:hover {
-  background-color: #555;
-}
-
-.grid-container{   
-   display: grid;
-   grid-column-gap: 50px;
-   grid-template-columns: auto auto;
-   background: linear-gradient(115deg, rgb(203, 193, 212), rgba(231, 175, 156, 0.712) );
-   padding: 10px;
-
-}
-
-h1{
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: aliceblue;
-}
-
-#text1{
-  font-weight: 600;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  color: rgb(26, 29, 29);
-
-}
-.grid-item{
-  background-color: aqua;
-  border: 10px solid black;
-  padding: 20px;
-  font-size: 20px;
-  text-align: center;
-
-}
-#vp1{
-  align-self: center;
-  margin-left: 190px;
-}
-#vp2{
-  width: 276px;
-  height: 183px;
-  margin-left: 190px;
-}
-
-.virsraksts{
-  height: 50px;
-  text-align: center;
-}
-
-p{
-  margin-bottom: 0px;
-}
-
-/* @media (max-width: 500px){
-
-  body{
-    width: 500px;
-  }
-  #vp1, #vp2{
-    width: 200px;
-  }
-} */
-
-
-
-        
-    </style>
-
-    
     <!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
 
 
 </head>
 
 <body>
-
-  
   <header>
-
     <div class="container">
       
         <img src="./assets/img/logofinal.png" alt="logo" class="logo">
@@ -268,10 +37,10 @@ p{
             <div class="navbar-links">
                 <ul>
                     <li><a href="#">Sākums</a></li>
-                    <li><a href="#">Stomatoloģija</a></li>
-                    <li><a href="#">Cenrādis</a></li>
-                    <li><a href="#">Ozonoterapija</a></li>
-                    <li><a href="#">Kontakti</a></li>
+                    <li><a href="index1.html">Stomatoloģija</a></li>
+                    <li><a href="index3.html">Cenrādis</a></li>
+                    <li><a href="index2.html">Ozonoterapija</a></li>
+                    <li><a href="index4.html">Kontakti</a></li>
                 </ul>
             </div>
            
@@ -338,42 +107,15 @@ p{
       </main>
 
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./assets/img/baseline_arrow_upward_black_18dp.png" alt="arrow2"></button>
+ <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./assets/img/baseline_arrow_upward_black_18dp.png" alt="arrow2"></button>
 
-   
-
-        <div id="footer"></div>
-			<footer>
+<div id="footer"></div>
+	<footer>
     <p class="copyright">©Vipdent 2020</p>
-      </footer>
-        </div>
+  </footer>
+</div>
 </body>
 
-<script>
-  const toggleButton = document.getElementsByClassName('toggle-button')[0]
-  const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-  toggleButton.addEventListener('click', () => {
-      navbarLinks.classList.toggle('active')
-  })
-
-  mybutton = document.getElementById("myBtn");
-      
-      window.onscroll = function() {scrollFunction()};
-    
-      function scrollFunction(){
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-      }
-    
-      function topFunction() {
-      document.body.scrollTop = 0; 
-      document.documentElement.scrollTop = 0; 
-    }
-</script>
 </html>
 
             
