@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0;
+            background-color: cadetblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+        }
+        .container{
+            width: 80%;
+            margin: 0 auto;
+        }
+        header{
+            background-color: pink;
+        }
+        header ::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .logo{
+            float: left;
+            padding: 10px 0;
+        }
+        nav{
+            float: right;
+        }
+        nav ul{
+           margin: 0; 
+           padding: 0;
+           list-style: none;
+           display: flex;
+        }
+        nav li{
+            display: inline-block;
+            margin-left: 60px;
+            padding-top: 40px;
+
+            position: relative;
+
+            list-style: none;
+        }
+
+        nav a{
+            color: royalblue;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+ 
+        }
+
+        nav a:hover{
+            color: salmon;
+        }
+
+        nav a::before{
+            content: '';
+            display: block;
+            height: 5px;
+            width: 100%;
+            background-color: rgb(214, 126, 85);
+
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 250ms;;
+        }
+
+        nav a:hover::before{
+            width: 100%;
+        }
+        .toggle-button {
+            position: absolute;
+            top: .75rem;
+            right: 1rem;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+        }
+        .toggle-button .bar{
+            height: 3px;
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 600px){
+            .toggle-button{
+                display: flex;
+            }
+            .navbar-links{
+                display: none;
+                width: 100%;
+                margin-right: 280px;
+            }
+
+            nav{
+                flex-direction: column;
+                align-items: flex-start;
+                
+            }
+
+            .navbar-links ul{
+                width: 100%;
+                flex-direction: column;
+            }
+            .navbar-links li{
+                text-align: center;
+                padding: 10px 0;
+            }
+
+            .navbar-links a{
+                padding: .5rem 1rem;
+            }
+            .navbar-links.active{
+                display: flex;
+            }
+            
+        }
+
+        
+    </style>
+
+  
+</head>
+<body>
+    
+    <header>
+
+        <div class="container">
+          
+            <img src="./assets/img/logofinal.png" alt="logo" class="logo">
+
+           <a href="#" class="toggle-button">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+           </a>
+            <nav>
+              
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="#">Sākums</a></li>
+                        <li><a href="#">Stomatoloģija</a></li>
+                        <li><a href="#">Cenrādis</a></li>
+                        <li><a href="#">Ozonoterapija</a></li>
+                        <li><a href="#">Kontakti</a></li>
+                    </ul>
+                </div>
+               
+                
+            </nav>
+    
+        </div> 
+
+        
+    </header>
+</body>
+<script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+    })
+ </script>
+</html>

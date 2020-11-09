@@ -14,29 +14,126 @@
       html{
         scroll-behavior: smooth;
       }
-        body{
+      body{
             margin: 0;
+            background-color: cadetblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
         }
-        ul{
-            margin-left: 300px;
+        .container{
+            width: 80%;
+            margin: 0 auto;
         }
-        ul li{
-            padding: 5px 5px;
+        header{
+            background-color: pink;
         }
-        .navbar-brand{
-            margin-left: 0;
+        header ::after{
+            content: '';
+            display: table;
+            clear: both;
         }
         .logo{
-            height: 50px;
-      
+            float: left;
+            padding: 10px 0;
         }
-        ul li a{
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 400;
-            letter-spacing: 1px;
+        nav{
+            float: right;
+        }
+        nav ul{
+           margin: 0; 
+           padding: 0;
+           list-style: none;
+           display: flex;
+        }
+        nav li{
+            display: inline-block;
+            margin-left: 60px;
+            padding-top: 40px;
+
+            position: relative;
+
+            list-style: none;
+        }
+
+        nav a{
+            color: royalblue;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+ 
+        }
+
+        nav a:hover{
+            color: salmon;
+        }
+
+        nav a::before{
+            content: '';
+            display: block;
+            height: 5px;
+            width: 100%;
+            background-color: rgb(214, 126, 85);
+
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 250ms;;
+        }
+
+        nav a:hover::before{
+            width: 100%;
+        }
+        .toggle-button {
+            position: absolute;
+            top: .75rem;
+            right: 1rem;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+        }
+        .toggle-button .bar{
+            height: 3px;
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 600px){
+            .toggle-button{
+                display: flex;
+            }
+            .navbar-links{
+                display: none;
+                width: 100%;
+                margin-right: 280px;
+            }
+
+            nav{
+                flex-direction: column;
+                align-items: flex-start;
+                
+            }
+
+            .navbar-links ul{
+                width: 100%;
+                flex-direction: column;
+            }
+            .navbar-links li{
+                text-align: center;
+                padding: 10px 0;
+            }
+
+            .navbar-links a{
+                padding: .5rem 1rem;
+            }
+            .navbar-links.active{
+                display: flex;
+            }
             
-           
         }
+        
 
 
         footer {
@@ -76,18 +173,12 @@ p.copyright {
   background-color: #555;
 }
 
-.grid-container{
+.grid-container{   
    display: grid;
-   box-sizing: border-box;
+   grid-column-gap: 50px;
    grid-template-columns: auto auto;
-   margin: 0;
-   padding: 10px;
    background: linear-gradient(115deg, rgb(203, 193, 212), rgba(231, 175, 156, 0.712) );
-   object-fit: fill;
-   max-width: 100%;
-   grid-row-gap: 10px;
-   justify-content: space-evenly;
-   
+   padding: 10px;
 
 }
 
@@ -107,7 +198,12 @@ h1{
 
 }
 .grid-item{
-  align-items: center;
+  background-color: aqua;
+  border: 10px solid black;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+
 }
 #vp1{
   align-self: center;
@@ -128,7 +224,7 @@ p{
   margin-bottom: 0px;
 }
 
-@media (max-width: 500px){
+/* @media (max-width: 500px){
 
   body{
     width: 500px;
@@ -136,10 +232,9 @@ p{
   #vp1, #vp2{
     width: 200px;
   }
-}
+} */
 
 
-/*  */
 
         
     </style>
@@ -156,64 +251,56 @@ p{
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(187, 100, 161);" >
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#welcome1"><img src="./assets/img/logofinal.png" alt="logonew" class="logo"></a>
+  
+  <header>
 
-        <!-- <a href=""><img src="./assets/img/logofinal.png" alt="logonew"></a> -->
+    <div class="container">
       
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#sakums">Sākums <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index1.html">Stomatoloģija</a>
-              <!-- <ul class="stom">
-                <li class="stom1"><a href="index1.html" class="stom2">Zobu higiena</a></li>
-                <li class="stom1"><a href="" class="stom2">Zobu plombēšana</a></li>
-                <li class="stom1"><a href="" class="stom2">Zobu protezēšana</a></li>
-                <li class="stom1"><a href="" class="stom2">Zobu balināšana</a></li>
-              </ul> -->
-            </li> 
-            <li class="nav-item">
-              <a class="nav-link" href="index3.html">Pakalpojumi un Cenrādis</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index2.html">Ozonoterapija</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacts">Kontakti</a>
-            </li> 
-            <li class="nav-item">
-                <a class="nav-link" href="#language">LV</a>
-              </li> 
-          </ul>
-          <!-- <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form> -->
-        </div>
+        <img src="./assets/img/logofinal.png" alt="logo" class="logo">
 
-      </nav>
+       <a href="#" class="toggle-button">
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+       </a>
+        <nav>
+          
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#">Sākums</a></li>
+                    <li><a href="#">Stomatoloģija</a></li>
+                    <li><a href="#">Cenrādis</a></li>
+                    <li><a href="#">Ozonoterapija</a></li>
+                    <li><a href="#">Kontakti</a></li>
+                </ul>
+            </div>
+           
+            
+        </nav>
+
+    </div> 
+
+    
+</header>
 
       <main>
 
-        
-        
         <div class="grid-container">
+          <div class="grid-item">1</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>  
+          <div class="grid-item">4</div>
+          
+        </div>
+        
+        <!-- <div class="grid-container">
           <h1><em>Sveicināti VipDent Zobārstniecībā!</em></h1>
           <br>
           <div class="grid-row">
             <div class="grid-item" id="text1"><p>
           
-              Mūsu firma sniedz pakalpojumus plaša spektra Stomatoloģijā: Ārstēšana, Protēzēšana, Implantologija, Mutes dobuma higiena ar Castellini aparatūru (Anti HIV sistēmu),  Zobu balināšana. 
+              Mūsu firma sniedz pakalpojumus plaša spektra Stomatoloģijā: Ārstēšana, Protēzēšana, Implantologija, Mutes dobuma higiena ar Castellini aparatūru (Anti HIV sistēmu),  Zobu balināšana.
 
-              Mūsu praksē izmantojam tikai augstas kvalitātes materiālus no Japānas, ASV, Šveices! Sertificēts ārstu personāls ar lielu darba pieredzei. Ārsti patstāvīgi apmeklē apmācības kursus ārzemēs .
-              Personas ar funkcionāliem traucējumiem, kas vēlas saņemt pakalpojums mūsu klīnikā ir iepriekš (24h) jābrīdina klīnikas personāls par to ka ir nepieciešama palīdzība, lai nokļūtu līdz pakalpojumu sniegšanas vietai. Šādos gadījumos tiek izsaukts speciāls dienests(SJP), kas palīdz personām ar funkcionāliem traucējumiem nokļūt līdz pakalpojumu sniegšanas vietai. Pakalpojums ir pilnībā bez maksas.
-            
             </p></div>
             <div class="grid-item"><img src="./assets/img/vp3.jpg" alt="vp1" id="vp1"></div>
 
@@ -223,15 +310,15 @@ p{
 
             <div class="grid-item"><img src="./assets/img/vp1.jpg" alt="vp1" id="vp1"></div>
           
-            <div class="grid-item" id="text1"><p>Zobu higiēna ir profilaktiska zobārstniecības procedūra, kurai ir ļoti svarīga nozīme labas zobu un smaganu veselības saglabāšanai. Zobu higiēnista apmeklējums vismaz divas reizes gadā pacientam ļauj regulāri kontrolēt savu zobu veselību un uzturēt zobus veselus. Zobu higiēnas procedūras laikā ar speciāliem zobārstniecības instrumentiem un medicīniskiem līdzekļiem tiek iztīrītas visas grūti sasniedzamās mutes dobuma daļas, likvidējot kaitīgās zobu aplikuma baktērijas un zobakmeni, kas ir galvenie zobu un smaganu problēmas izraisošie faktori.</p></div>
+            <div class="grid-item" id="text1"><p>Zobu higiēna ir profilaktiska zobārstniecības procedūra, kurai ir ļoti svarīga nozīme labas zobu un smaganu veselības saglabāšanai. </p></div>
             
           </div>
           
           <div class="grid-row">
 
-            <div class="grid-item" id="text1"><p>Skaists, žilbinošs un apburošs smaids? Protams, kurš no mums gan nesapņo par tādu! Bet kafijas, tējas, vīna, tabakas un antibiotiku lietošana ietekmē zobu emalju, un tā rezultātā zobi vairs nav ne tik balti, ne skaisti, Tomēr atgūt savu žilbinošo smaidu tu vari dažu stundu laikā ar ZOOM!
+            <div class="grid-item" id="text1"><p>Skaists, žilbinošs un apburošs smaids? Protams, kurš no mums gan nesapņo par tādu! Bet kafijas, tējas, vīna, tabakas un antibiotiku lietošana ietekmē zobu emalju, un tā rezultātā zobi vairs nav ne tik balti, ne skaisti, tomēr atgūt savu žilbinošo smaidu tu vari dažu stundu laikā ar ZOOM!
 
-              ZOOM! - viens no saudzīgākajiem zobu balināšanas veidiem, jaunākās paaudzes profesionāla zobu balināšanas sistēma, kas nepilnu 2h laikā spēj padarīt smaidu līdz pat astoņiem toņiem gaišāku.</p></div>
+             </p></div>
 
               <div class="grid-item"><img src="./assets/img/vp4.jpg" alt="vp1" id="vp2"></div>
 
@@ -245,7 +332,7 @@ p{
 
             
           </div>
-        </div>
+        </div> -->
 
 
       </main>
@@ -253,9 +340,24 @@ p{
 
         <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./assets/img/baseline_arrow_upward_black_18dp.png" alt="arrow2"></button>
 
-      
-    <script>
-     mybutton = document.getElementById("myBtn");
+   
+
+        <div id="footer"></div>
+			<footer>
+    <p class="copyright">©Vipdent 2020</p>
+      </footer>
+        </div>
+</body>
+
+<script>
+  const toggleButton = document.getElementsByClassName('toggle-button')[0]
+  const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+  toggleButton.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active')
+  })
+
+  mybutton = document.getElementById("myBtn");
       
       window.onscroll = function() {scrollFunction()};
     
@@ -271,15 +373,7 @@ p{
       document.body.scrollTop = 0; 
       document.documentElement.scrollTop = 0; 
     }
-
-    </script>
-
-        <div id="footer"></div>
-			<footer>
-    <p class="copyright">©Vipdent 2020</p>
-      </footer>
-        </div>
-</body>
+</script>
 </html>
 
             
