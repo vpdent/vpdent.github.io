@@ -3,7 +3,7 @@ html{
   }
   body{
         margin: 0;
-        background-color: cadetblue;
+        background-color: rgb(219, 210, 179);
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 500;
     }
@@ -88,8 +88,9 @@ html{
     }
     p{
         margin-bottom: 0px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
+        color: rgb(63, 187, 129);
         }
 
     @media (max-width: 600px){
@@ -131,6 +132,7 @@ html{
             margin-left: auto;
         }
          */
+       
 
         .map{
             width: auto;   
@@ -144,12 +146,24 @@ html{
         .center{
             padding-top: 10px;
         }
+        .viela{
+            width: 300px;
+        }
+        .kont{
+            font-size: 10px;
+        }
+        .raksts{
+            margin-bottom: 110px;
+        }
+        
     }
     
 
 
 footer {
-position: relative;
+position: fixed;
+left: 0;
+bottom: 0;
 height: 100px;
 width: 100%;
 background-color: rgba(240, 217, 217, 0.925);
@@ -187,10 +201,10 @@ background-color: #555;
 
 .grid-container{   
 display: grid;
-grid-column-gap: 50px;
-grid-template-columns: auto auto;
-background: linear-gradient(115deg, rgb(203, 193, 212), rgba(231, 175, 156, 0.712) );
-padding: 10px;
+grid-column-gap: 30px;
+grid-template-columns: auto auto auto;
+justify-content: space-evenly;
+
 
 }
 
@@ -198,6 +212,7 @@ h1{
 font-size: 25px;
 font-family: Arial, Helvetica, sans-serif;
 color: aliceblue;
+margin-left: 20px;
 }
 /* 
 #text1{
@@ -210,11 +225,13 @@ color: rgb(26, 29, 29);
 
 } */
 .grid-item{
-background-color: aqua;
-border: 10px solid black;
-padding: 20px;
+border: 0.5px none black;
+padding: 10px;
 font-size: 20px;
 text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 700;
+color: rgb(219, 147, 106);
 
 }
 /* #vp1{
@@ -248,7 +265,7 @@ margin-left: 190px;
 
 
 table, th{
-    border: 2px solid rgb(160, 42, 160);
+    border: 2px none rgb(160, 42, 160);
   }
   table{
     border-collapse: collapse;
@@ -258,6 +275,12 @@ table, th{
   
   .virsraksts{
     height: 50px;
+    float: left;
+    
+  }
+  .virsraksts2{
+    height: 50px;
+    float: right;
     text-align: center;
   }
   #ss{
@@ -267,13 +290,15 @@ table, th{
   }
   .mm{
       font-weight: 500;
+      float: left;
+      font-size: 13px;
   }
   .gg{
       font-weight: 500;
-      width: 46px;
+      float: right;
+      font-size: 13px;
   }
   .pakalpojumi{
-    background: linear-gradient(115deg, rgb(203, 193, 212), rgba(231, 175, 156, 0.712) );;
     max-width: 100%;
     margin-top: 0px;
   }
@@ -291,6 +316,12 @@ table, th{
       margin-right: auto;
       margin-left: auto;
   }
+  .viela{
+      width: 300px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;  
+  }
 
   .ikonas{
     display: block;
@@ -307,10 +338,11 @@ table, th{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .fas{
     content: icon;
-    color: aqua;
+    color: rgb(219, 147, 106);
     text-align: center;
     display: block;
     width: 10px;
@@ -319,4 +351,29 @@ table, th{
 }
 .cont{
     text-align: center;
+}
+.kont{
+    font-size: 14px;
+    font-weight: 200;    
+}
+#fifth{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: rgb(219, 147, 106);
+}
+
+.gjen{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 75px;
+    margin-bottom: 150px;
+}
+
+h3{
+    font-weight: bold;
+    color: rgb(63, 187, 129);
+    font-style: italic;
 }
