@@ -195,6 +195,16 @@ html{
           background-attachment: scroll;
         }
       }
+
+      /* .white{
+        background-image: url("./assets/img/white.jpg");
+        min-height: 100px;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } */
     /* @media(min-width: 781px){
         table{
             display: none;
@@ -577,4 +587,8 @@ h3{
     clear: both;
     display: table;
   }
+
+  /* .white{
+      display: none;
+  } */
   
