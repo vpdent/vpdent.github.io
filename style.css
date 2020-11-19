@@ -178,7 +178,6 @@ html{
             width: 25%;
       
         }
-        
         .overlay{
             display: none;
         }
@@ -194,7 +193,7 @@ html{
 
     @media only screen and (max-device-width: 1366px) {
         .vp1, .vp2, .vp3, .vp7 {
-          background-attachment: scroll;
+          display: none;
         }
       }
     /* @media(min-width: 781px){
