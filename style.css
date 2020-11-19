@@ -187,13 +187,12 @@ html{
             line-height: 300%;
         }
 
-
         
     }
 
     @media only screen and (max-device-width: 1366px) {
         .vp1, .vp2, .vp3, .vp7 {
-          display: none;
+          background-attachment: scroll;
         }
       }
     /* @media(min-width: 781px){
@@ -504,7 +503,7 @@ h3{
     float: left;
     color: whitesmoke;
     line-height: 200%;
-    margin-left: 50px;
+    margin-left: 25px;
 }
 #vp4{
     float: right;
