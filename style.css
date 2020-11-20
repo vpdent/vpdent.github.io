@@ -99,9 +99,9 @@ html{
          display: none;
      }
      @media only screen and (max-width:300px) {
-        /* For mobile phones: */
-        .navbar-links, .footer, .sad {
+        .navbar-links{
           width:100%;
+          margin-right: auto;
         }
       }
 
