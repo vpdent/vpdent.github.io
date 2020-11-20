@@ -99,14 +99,14 @@ html{
          display: none;
      }
 
-    @media (max-width: 780px){
+    @media (max-width: 680px){
         .toggle-button{
             display: flex;
         }
         .navbar-links{
             display: none;
             width: 100%;
-            margin-right: 280px;
+            margin-right: 150px;
         }
 
         nav{
@@ -121,6 +121,12 @@ html{
         .navbar-links li{
             text-align: center;
             padding: 10px 0;
+        }
+        .gg{
+            margin-right: -20px;
+        }
+        .mm{
+            margin-left: -10px;
         }
 
         .navbar-links a{
@@ -169,6 +175,7 @@ html{
         }
         #higiena{
             font-size: 14px;
+            margin-top: 40px;
         }
         #balinasana{
             line-height: normal;
@@ -186,7 +193,21 @@ html{
             color: whitesmoke;
             line-height: 300%;
         } 
+        .sponsors{
+            width: 200px; 
+        }
+        .ff{
+            display: none;
+        }
+        /* .grid-item{
+            font-size: 10px;
+        } */
+        /* #gjen, #comp{
+        
+        } */
     }
+
+    
 
     @media only screen and (max-device-width: 1366px) {
         .vp1, .vp2, .vp3, .vp7 {
@@ -324,17 +345,18 @@ color: black;
     width: 80%;
     margin-left: 7.5%;
     font-family:'Cabin', sans-serif;
+
     
   }
   .mm{
       font-weight: 500;
       float: left;
-      font-size: 13px;
+      font-size: 10px;
   }
   .gg{
-      font-weight: 500;
+      font-weight: bold;
       float: right;
-      font-size: 13px;
+      font-size: 12px;
   }
   .pakalpojumi{
     max-width: 100%;
@@ -392,7 +414,7 @@ color: black;
     text-align: center;
 }
 .kont{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 200;    
 }
 #fifth{
@@ -494,7 +516,7 @@ h3{
 }
 .text1{
     height: 400px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .text2{
     height: 300px;
@@ -502,7 +524,7 @@ h3{
 }
 
 #higiena{
-    margin-top: 100px;
+    margin-top: 60px;
     text-align: center;
     color: whitesmoke;
     line-height: 200%;
@@ -582,7 +604,7 @@ h3{
   } */
 
 
-  .menu {
+  /* .menu {
     float:left;
     width:20%;
     text-align:center;
@@ -614,11 +636,11 @@ h3{
     text-align:center;
   }
   
-  @media only screen and (max-width:415px) {
+  @media only screen and (max-width:375px) {
     /* For mobile phones: */
-    .menu, .main, .right {
+    /* .menu, .main, .right {
       width:100%;
     }
   
-  }
-  
+  } 
+   */
