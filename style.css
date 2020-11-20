@@ -199,12 +199,9 @@ html{
         .ff{
             display: none;
         }
-        /* .grid-item{
-            font-size: 10px;
-        } */
-        /* #gjen, #comp{
-        
-        } */
+        .column{
+            margin-right: 50px;
+         }
     }
 
     
@@ -599,48 +596,3 @@ h3{
     display: table;
   }
 
-  /* .white{
-      display: none;
-  } */
-
-
-  /* .menu {
-    float:left;
-    width:20%;
-    text-align:center;
-  }
-  .menu a {
-    background-color: pink;
-    padding:8px;
-    margin-top:7px;
-    display:block;
-    width:100%;
-    color:royalblue;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: 'Cabin', sans-serif;
-    
-  }
-  .main {
-    float:left;
-    width:60%;
-    padding:0 20px;
-  }
-  .right {
-    background-color:#e5e5e5;
-    float:left;
-    width:20%;
-    padding:15px;
-    margin-top:7px;
-    text-align:center;
-  }
-  
-  @media only screen and (max-width:375px) {
-    /* For mobile phones: */
-    /* .menu, .main, .right {
-      width:100%;
-    }
-  
-  } 
-   */
