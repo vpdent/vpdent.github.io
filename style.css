@@ -99,7 +99,7 @@ html{
          display: none;
      }
 
-    @media (max-width: 415px){
+    @media (max-width: 780px){
         .toggle-button{
             display: flex;
         }
