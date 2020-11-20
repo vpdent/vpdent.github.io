@@ -193,18 +193,21 @@ html{
             color: whitesmoke;
             line-height: 300%;
         } 
-        .sponsors{
-            width: 200px; 
-        }
         .ff{
             display: none;
         }
         .column{
             margin-right: 50px;
          }
-    }
+        
+        .sponsors{
+            width: 200px;
+        }
+        
 
-    
+        
+         
+    }
 
     @media only screen and (max-device-width: 1366px) {
         .vp1, .vp2, .vp3, .vp7 {
