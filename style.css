@@ -99,7 +99,7 @@ html{
          display: none;
      }
 
-    /* @media (max-width: 780px){
+    @media (max-width: 780px){
         .toggle-button{
             display: flex;
         }
@@ -186,7 +186,7 @@ html{
             color: whitesmoke;
             line-height: 300%;
         } 
-    } */
+    }
 
     @media only screen and (max-device-width: 1366px) {
         .vp1, .vp2, .vp3, .vp7 {
