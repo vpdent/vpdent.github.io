@@ -186,6 +186,10 @@ html{
             color: whitesmoke;
             line-height: 300%;
         }
+        body{
+            max-width: 780px;
+            overflow-x: hidden;
+        }
 
         
     }
@@ -520,15 +524,6 @@ h3{
     margin-right: 40px;
     
 }
-
-/* #oo{
-    margin-bottom: 0px;
-    font-family: 'Cabin', sans-serif;
-    font-size: 14px;
-    color: whitesmoke;
-    margin-left: 50px;   
-} */
-
 .sakums {
     position: relative;
     width: 50%;
