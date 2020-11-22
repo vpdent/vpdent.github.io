@@ -99,116 +99,6 @@ html{
          display: none;
      }
 
-    @media (max-width: 680px){
-        .toggle-button{
-            display: flex;
-        }
-        .navbar-links{
-            display: none;
-            width: 100%;
-            margin-right: 150px;
-        }
-
-        nav{
-            flex-direction: column;
-            align-items: flex-start;     
-        }
-
-        .navbar-links ul{
-            width: 100%;
-            flex-direction: column;
-        }
-        .navbar-links li{
-            text-align: center;
-            padding: 10px 0;
-        }
-        .gg{
-            margin-right: -20px;
-        }
-        .mm{
-            margin-left: -10px;
-        }
-
-        .navbar-links a{
-            padding: .5rem 1rem;
-        }
-        .navbar-links.active{
-            display: flex;
-        }
-        .ozon{
-            width: 100%;
-        }
-        .ff{
-            font-size: 14px;
-        }
-    
-        .map{
-            width: auto;   
-        }
-        h1{
-            text-align: center;
-        }
-        p{
-            font-size: 16px;
-        }
-        .center{
-            padding-top: 10px;
-        }
-        .viela{
-            width: 300px;
-        }
-        .raksts{
-            margin-bottom: 110px;
-        }
-        .tableozon{
-            margin-bottom: 100px;
-            margin-top: -50px;
-        }
-        #mani{
-            margin-bottom: 150px;
-        }
-        .logo{
-            width: 100px;
-        }
-        .dd{
-            display: none;
-        }
-        #higiena{
-            font-size: 14px;
-            margin-top: 40px;
-        }
-        #balinasana{
-            line-height: normal;
-            font-size: 14px;
-        }
-        #vp4{
-            width: 25%;
-      
-        }
-        .overlay{
-            display: none;
-        }
-        .hiddentext{
-            display: block;
-            color: whitesmoke;
-            line-height: 300%;
-        } 
-        .ff{
-            display: none;
-        }
-        .column{
-            margin-right: 50px;
-         }
-        
-        .sponsors{
-            width: 200px;
-        }
-        
-
-        
-         
-    }
-
       /* .white{
         background-image: url("./assets/img/white.jpg");
         min-height: 100px;
@@ -345,12 +235,12 @@ color: black;
   .mm{
       font-weight: 500;
       float: left;
-      font-size: 10px;
+      font-size: 14px;
   }
   .gg{
       font-weight: bold;
       float: right;
-      font-size: 12px;
+      font-size: 14px;
   }
   .pakalpojumi{
     max-width: 100%;
@@ -557,6 +447,123 @@ h3{
     clear: both;
     display: table;
   }
+
+
+  @media (max-width: 680px){
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+        margin-right: 150px;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: flex-start;     
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li{
+        text-align: center;
+        padding: 10px 0;
+    }
+    .gg{
+        margin-right: -20px;
+        font-size: 10px;
+    }
+    .mm{
+        margin-left: -10px;
+        font-size: 10px;
+    }
+
+    .navbar-links a{
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+    .ozon{
+        width: 100%;
+    }
+    .ff{
+        font-size: 14px;
+    }
+
+    .map{
+        width: auto;   
+    }
+    h1{
+        text-align: center;
+    }
+    p{
+        font-size: 16px;
+    }
+    .center{
+        padding-top: 10px;
+    }
+    .viela{
+        width: 300px;
+    }
+    .raksts{
+        margin-bottom: 110px;
+    }
+    .tableozon{
+        margin-bottom: 100px;
+        margin-top: -50px;
+    }
+    #mani{
+        margin-bottom: 150px;
+    }
+    .logo{
+        width: 100px;
+    }
+    .dd{
+        display: none;
+    }
+    #higiena{
+        font-size: 14px;
+        margin-top: 40px;
+    }
+    #balinasana{
+        line-height: normal;
+        font-size: 14px;
+    }
+    #vp4{
+        width: 25%;
+  
+    }
+    .overlay{
+        display: none;
+    }
+    .hiddentext{
+        display: block;
+        color: whitesmoke;
+        line-height: 300%;
+    } 
+    .ff{
+        display: none;
+    }
+    .column{
+        margin-right: 50px;
+     }
+    
+    .sponsors{
+        width: 200px;
+    }
+    h6{
+        margin-left: 10px;
+        font-weight: 500;
+        font-family:'Cabin', sans-serif;
+        font-size: 15px;
+    }
+  
+}
+
 
 
   .vp1{
