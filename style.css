@@ -209,12 +209,6 @@ html{
          
     }
 
-    @media only screen and (max-device-width: 1366px) {
-        .vp1, .vp2, .vp3, .vp7 {
-          background-attachment: scroll;
-        }
-      }
-
       /* .white{
         background-image: url("./assets/img/white.jpg");
         min-height: 100px;
@@ -479,41 +473,6 @@ h3{
 .sad{
     text-align: center;
 }
-.vp1{
-    background-image: url("./assets/img/vpdent.jpg");
-    min-height: 500px;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.vp2{
-    background-image: url("./assets/img/vp1.jpg");
-    min-height: 500px;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.vp3{
-    background-image: url("./assets/img/ozon5.jpg");
-    min-height: 500px;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.vp7{
-    background-image: url("./assets/img/vp7.jpg");
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .text1{
     height: 400px;
     font-size: 18px;
@@ -598,4 +557,47 @@ h3{
     clear: both;
     display: table;
   }
+
+
+  .vp1{
+    background-image: url("./assets/img/vpdent.jpg");
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.vp2{
+    background-image: url("./assets/img/vp1.jpg");
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.vp3{
+    background-image: url("./assets/img/ozon5.jpg");
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.vp7{
+    background-image: url("./assets/img/vp7.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-device-width: 700px) {
+    .vp1, .vp2, .vp3, .vp7 {
+      background-attachment: scroll;
+    }
+  }
+
 
