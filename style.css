@@ -99,26 +99,6 @@ html{
          display: none;
      }
 
-      /* .white{
-        background-image: url("./assets/img/white.jpg");
-        min-height: 100px;
-
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    } */
-    /* @media(min-width: 781px){
-        table{
-            display: none;
-        }
-        .dd{
-            display: block;
-        }
-
-    }
-     */
-
 
 footer {
 position: fixed;
@@ -447,6 +427,20 @@ h3{
     clear: both;
     display: table;
   }
+  .akcija{
+      text-align: center;
+      border: khaki none 10px;
+      font-weight: 300;
+      font-size: 17px;
+      color: rgb(58, 82, 34);
+  }
+
+  #santa{
+      width: 10%;
+  }
+  #deer{
+      width: 10%;
+  }
 
 
   @media (max-width: 680px){
@@ -566,6 +560,17 @@ h3{
         font-weight: 500;
         font-family:'Cabin', sans-serif;
         font-size: 15px;
+    }
+    .akcija{
+        font-size: 13px;
+        
+    }
+    #santa{
+        margin-left: 10px;
+    }
+    #deer{
+        margin-right: 10px;
+      
     }
   
 }
