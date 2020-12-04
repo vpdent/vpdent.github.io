@@ -441,6 +441,15 @@ h3{
   #deer{
       width: 10%;
   }
+  .ozonreklama{
+    text-align: center;
+    border: khaki none 10px;
+    font-weight: 300;
+    font-size: 17px;
+    color: rgb(58, 82, 34);
+    margin-left: 5%;
+}
+
 
 
   @media (max-width: 680px){
@@ -561,7 +570,7 @@ h3{
         font-family:'Cabin', sans-serif;
         font-size: 15px;
     }
-    .akcija{
+    .akcija, .ozonreklama{
         font-size: 13px;
         
     }
@@ -617,5 +626,4 @@ h3{
       background-attachment: scroll;
     }
   }
-
 

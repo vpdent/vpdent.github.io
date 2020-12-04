@@ -21,3 +21,4 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0]
       document.body.scrollTop = 0; 
       document.documentElement.scrollTop = 0; 
     }
+
