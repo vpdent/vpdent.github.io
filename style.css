@@ -158,8 +158,6 @@ h1{
 font-size: 25px;
 font-family: 'Cabin', sans-serif;
 color: rgb(89, 153, 210);
-margin-left: 50px;
-
 }
 
 .aa{
@@ -452,7 +450,7 @@ h3{
 
 
 
-  @media (max-width: 680px){
+  @media (max-width: 768px){
     .toggle-button{
         display: flex;
     }
@@ -474,6 +472,7 @@ h3{
     .navbar-links li{
         text-align: center;
         padding: 10px 0;
+        margin-left: 0;
     }
     .gg{
         margin-right: -20px;
@@ -621,7 +620,7 @@ h3{
     background-repeat: no-repeat;
     background-size: cover;
 }
-@media only screen and (max-device-width: 700px) {
+@media only screen and (max-device-width: 768px) {
     .vp1, .vp2, .vp3, .vp7 {
       background-attachment: scroll;
     }
@@ -654,5 +653,19 @@ h3{
   .btn:hover{
     background-color: blue;
   }
+
+  .imageForForm{
+    width: 400px;
+    height: 300px;
+  }
   
+  @media only screen and (max-device-width: 768px) {
+    .container3{
+        width: auto;
+    }
+    .imageForForm{
+        max-width: 100%;
+        height: auto;
+    }
+  }
 
