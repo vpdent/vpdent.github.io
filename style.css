@@ -3,11 +3,13 @@ html{
   }
   body{
         margin: 0;
+        padding: 0;
+        box-sizing: border-box;
         background-color: rgb(247, 246, 246);
         font-family: 'Cabin', sans-serif;
         font-weight: 500;
     }
-    .container{
+    /* .container{
         width: 80%;
         margin: 0 auto;
     }
@@ -69,7 +71,7 @@ html{
 
     nav a:hover::before{
         width: 100%;
-    }
+    } */
     .toggle-button {
         position: absolute;
         top: .75rem;
@@ -86,6 +88,153 @@ html{
         background-color: white;
         border-radius: 10px;
     }
+
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+        background-color: aqua;
+        font-family: 'Cabin', sans-serif;
+        height: 110px;
+      
+      }
+      
+      .logo{
+        color: red;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 25px;
+        padding-top: 15px;
+        font-family: 'Langar', cursive;
+      }
+      
+      .nav-links{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        padding-left: 0;
+        padding-top: 15px;
+      }
+      
+    
+      .nav-links li{
+        list-style: none;
+      }
+      
+      .nav-links a{
+        color: blueviolet;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font: bold;
+        font-size: 14px;
+      }
+      nav a:hover{
+        color: salmon;
+    }
+      .burger{
+        display: none;
+        cursor: pointer;
+      }
+      .burger div{
+        width: 25px;
+        height: 5px;
+        background-color: blueviolet;
+        margin: 5px;
+        transition: all 0.3s ease;
+      }
+      @media screen and (max-width: 1024px){
+        .nav-links{
+          width: 70%;
+        }
+      }
+      
+      @media screen and (max-width: 768px){
+          body{
+            overflow-x: hidden;
+          }
+          .nav-links{
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top: 8vh;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+          }
+      
+          .nav-links li{
+            opacity: 0;
+          }
+          .burger{
+            display: block;
+          }
+      }
+      
+      .nav-active{
+        transform: translateX(0%);
+      }
+      
+      @keyframes navLinkFade{
+        from{
+          opacity: 0;
+          transform: translateX(50px);
+        }
+        to{
+          opacity: 1;
+          transform: translateX(0px);
+        } 
+      }
+      
+      .toggle .line1{
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+      .toggle .line2{
+        opacity: 0;
+      }
+      .toggle .line3{
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+    /* @media (max-width: 768px){
+        .toggle-button{
+            display: flex;
+        }
+        .navbar-links{
+            display: none;
+            width: 100%;
+            margin-right: 150px;
+        }
+    
+        nav{
+            flex-direction: column;
+            align-items: flex-start;     
+        }
+    
+        .navbar-links ul{
+            width: 100%;
+            flex-direction: column;
+        }
+        .navbar-links li{
+            text-align: center;
+            padding: 10px 0;
+            margin-left: 0;
+        }
+        .navbar-links a{
+            padding: .5rem 1rem;
+        }
+        .navbar-links.active{
+            display: flex;
+        }
+        .logo{
+            width: 100px;
+        }
+    } */
+
     p{
         margin-bottom: 0px;
         font-family: 'Cabin', sans-serif;
@@ -99,25 +248,17 @@ html{
          display: none;
      }
 
+     @media(max-width: 768px){
+        p{
+            font-size: 16px;
+        }
+        .hiddentext{
+            display: block;
+            color: whitesmoke;
+            line-height: 300%;
+        } 
+     }
 
-footer {
-position: fixed;
-left: 0;
-bottom: 0;
-height: 100px;
-width: 100%;
-background-color: rgba(240, 217, 217, 0.925);
-}
-
-p.copyright {
-position: absolute;
-width: 100%;
-color: black;
-line-height: 40px;
-font-size: 0.7em;
-text-align: center;
-bottom:0;
-}
 
 #myBtn {
 display: none;
@@ -128,7 +269,7 @@ z-index: 99;
 font-size: 18px;
 border: none;
 outline: none;
-background-color:  rgb(187, 100, 161);
+background-color: #290f70;
 color: white;
 cursor: pointer;
 padding: 15px;
@@ -136,7 +277,7 @@ border-radius: 4px;
 }
 
 #myBtn:hover {
-background-color: #555;
+    background-color: blue;
 }
 
 .grid-container{   
@@ -145,24 +286,14 @@ grid-column-gap: 2px;
 grid-template-columns: auto auto auto;
 justify-content: space-evenly;
 }
-.sponsors{
-    display: grid;
-    grid-column-gap:2px;
-    grid-template-columns: auto auto;
-    justify-content: space-evenly;
-    margin-bottom: 100px;
-    
-}
 
 h1{
 font-size: 25px;
 font-family: 'Cabin', sans-serif;
 color: rgb(89, 153, 210);
+text-align: center;
 }
 
-.aa{
-    border: 0.5px none black;    
-}
 .grid-item{
 border: 0.5px none black;
 padding: 5px;
@@ -177,6 +308,16 @@ color: black;
     width: auto;
     height: auto;
 }
+
+@media (max-width: 768px){
+    .ozon{
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+    }
+}
+
   
 #ozon2{
     width: 40%;
@@ -220,6 +361,18 @@ color: black;
       float: right;
       font-size: 14px;
   }
+
+  @media (max-width: 768px){
+    .gg{
+        margin-right: -20px;
+        font-size: 10px;
+    }
+    .mm{
+        margin-left: -10px;
+        font-size: 10px;
+    }
+  }
+
   .pakalpojumi{
     max-width: 100%;
     margin-top: 0px;
@@ -234,17 +387,6 @@ color: black;
       font-size: 19px;
   }
 
-  .map{
-      display: block;
-      margin-right: auto;
-      margin-left: auto;
-  }
-  .viela{
-      width: 300px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;  
-  }
 
   .ikonas{
     display: block;
@@ -256,12 +398,6 @@ color: black;
     size: 20px;
     margin-right: auto;
     margin-left: auto;
-}
-.center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
 }
 .fas{
     content: icon;
@@ -285,25 +421,58 @@ color: black;
     font-weight: 400;
     color: black;
 }
-
+.sponsors{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 100px;
+    padding-top: 50px;
+    
+}
+/* 
 #gjen{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    padding: 10px;
-    margin-top: 25%;
-}
-#comp{
-    display: block;
-    padding: 10px;
-}
+    width: 70%;
+} */
+/* #comp{
+    
+} */
+  
+@media (max-width: 768px) {
+    .sponsors{
+        display: flex;
+        flex-direction: column;
+    }
+    #gjen{
+        max-width: 100%;
+        height: auto;
+    }
+    #comp{
+        height: 300px;
+    }
+    h6{
+        margin-left: 10px;
+        font-weight: 500;
+        font-family:'Cabin', sans-serif;
+        font-size: 15px;
+    }
+  }
 
 h3{
     font-weight: bold;
     color: rgb(89, 153, 210);
     font-style: italic;
     margin-left: 50px;
+}
+.map{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.viela{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
 }
 
 .tableozon{
@@ -315,6 +484,12 @@ h3{
 #intro{
     text-align: center;
     margin-top: 25px;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .carousel{
@@ -340,6 +515,7 @@ h3{
 }
 .sad{
     text-align: center;
+    padding: 20px;
 }
 .text1{
     height: 400px;
@@ -367,6 +543,53 @@ h3{
     margin-right: 40px;
     
 }
+
+@media (max-width: 768px){
+    #higiena{
+        font-size: 14px;
+        margin-top: 40px;
+    }
+    #balinasana{
+        line-height: normal;
+        font-size: 14px;
+    }
+    #vp4{
+        width: 25%;
+  
+    }
+    .ff{
+        display: none;
+        font-size: 14px;    
+    }
+    .raksts{
+        margin-bottom: 110px;
+    }
+    .tableozon{
+        margin-bottom: 100px;
+        margin-top: -50px;
+    }
+    .center{
+        padding-top: 10px;
+    }
+    .viela{
+        width: 300px;
+    }
+    .map{
+        width: auto;   
+    }
+    #mani{
+        margin-bottom: 150px;
+    }
+
+}
+
+/* 
+
+.pakalpojumuContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+} */
 .sakums {
     position: relative;
     width: 50%;
@@ -395,7 +618,7 @@ h3{
   }
   
   .text {
-    color: rgb(89, 153, 210);
+    color: rgb(24, 50, 72);
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -409,36 +632,40 @@ h3{
   * {
       box-sizing: border-box;
   }
+.column{
+    margin-left: 100px;
+ }
+.sakums {
+   float: left;
+   width: 33.33%;
+   padding: 5px;
+ } 
  
-  .column{
-     margin-left: 100px;
-  }
-  .sakums {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-  }
-  
-  /* Clear floats after image containers */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  .akcija{
-      text-align: center;
-      border: khaki none 10px;
-      font-weight: 300;
-      font-size: 17px;
-      color: rgb(58, 82, 34);
-  }
+ /* Clear floats after image containers */
+.row::after {
+   content: "";
+   clear: both;
+   display: table;
+ } 
 
-  #santa{
-      width: 10%;
+
+  @media only screen and (max-device-width: 768px) {
+    /* .pakalpojumuContent{
+        display: flex;
+        align-content: space-around;
+        flex-direction: column;
+    } */
+    .overlay{
+        display: none;
+    }
+
+    .column{
+        margin-right: 50px;
+     }
+
   }
-  #deer{
-      width: 10%;
-  }
+ 
+  
   .ozonreklama{
     text-align: center;
     border: khaki none 10px;
@@ -448,131 +675,30 @@ h3{
     margin-left: 5%;
 }
 
-
+  .akcija{
+      text-align: center;
+      border: khaki none 10px;
+      font-weight: 300;
+      font-size: 17px;
+      color: rgb(58, 82, 34);
+  }
+  
 
   @media (max-width: 768px){
-    .toggle-button{
-        display: flex;
-    }
-    .navbar-links{
-        display: none;
-        width: 100%;
-        margin-right: 150px;
-    }
-
-    nav{
-        flex-direction: column;
-        align-items: flex-start;     
-    }
-
-    .navbar-links ul{
-        width: 100%;
-        flex-direction: column;
-    }
-    .navbar-links li{
-        text-align: center;
-        padding: 10px 0;
-        margin-left: 0;
-    }
-    .gg{
-        margin-right: -20px;
-        font-size: 10px;
-    }
-    .mm{
-        margin-left: -10px;
-        font-size: 10px;
-    }
-    /* th .virsraksts{
-        margin-right: -20px;
-    }
-    .virsraksts2{
-        margin-left: -10px; 
-    } */
-
-    .navbar-links a{
-        padding: .5rem 1rem;
-    }
-    .navbar-links.active{
-        display: flex;
-    }
-    .ozon{
-        width: 100%;
-    }
-    .ff{
-        font-size: 14px;
-    }
-
-    .map{
-        width: auto;   
-    }
-    h1{
-        text-align: center;
-    }
-    p{
-        font-size: 16px;
-    }
-    .center{
-        padding-top: 10px;
-    }
-    .viela{
-        width: 300px;
-    }
-    .raksts{
-        margin-bottom: 110px;
-    }
-    .tableozon{
-        margin-bottom: 100px;
-        margin-top: -50px;
-    }
-    #mani{
-        margin-bottom: 150px;
-    }
-    .logo{
-        width: 100px;
-    }
-    .dd{
-        display: none;
-    }
-    #higiena{
-        font-size: 14px;
-        margin-top: 40px;
-    }
-    #balinasana{
-        line-height: normal;
-        font-size: 14px;
-    }
-    #vp4{
-        width: 25%;
-  
-    }
-    .overlay{
-        display: none;
-    }
-    .hiddentext{
-        display: block;
-        color: whitesmoke;
-        line-height: 300%;
-    } 
-    .ff{
-        display: none;
-    }
-    .column{
-        margin-right: 50px;
-     }
-    
-    .sponsors{
-        width: 200px;
-    }
-    h6{
-        margin-left: 10px;
-        font-weight: 500;
-        font-family:'Cabin', sans-serif;
-        font-size: 15px;
-    }
     .akcija, .ozonreklama{
         font-size: 13px;
         
     }
+  }
+
+  #santa{
+      width: 10%;
+  }
+  #deer{
+      width: 10%;
+  }
+
+  @media (max-width: 768px){
     #santa{
         margin-left: 10px;
     }
@@ -580,12 +706,31 @@ h3{
         margin-right: 10px;
       
     }
+  }
+
+
+  @media (max-width: 768px){
+
+    /* th .virsraksts{
+        margin-right: -20px;
+    }
+    .virsraksts2{
+        margin-left: -10px; 
+    } */
+
+    .dd{
+        display: none;
+    }
+
+   
+    #sakumaSlaids{
+        display: none;
+    }
   
 }
 
 
-
-  .vp1{
+.vp1{
     background-image: url("./assets/img/vpdent.jpg");
     min-height: 500px;
 
@@ -620,7 +765,7 @@ h3{
     background-repeat: no-repeat;
     background-size: cover;
 }
-@media only screen and (max-device-width: 768px) {
+@media (max-width: 768px) {
     .vp1, .vp2, .vp3, .vp7 {
       background-attachment: scroll;
     }
@@ -668,4 +813,94 @@ h3{
         height: auto;
     }
   }
+
+/* footer {
+position: fixed;
+left: 0;
+bottom: 0;
+height: 100px;
+width: 100%;
+background-color: rgba(240, 217, 217, 0.925);
+}
+
+p.copyright {
+position: absolute;
+width: 100%;
+color: black;
+line-height: 40px;
+font-size: 0.7em;
+text-align: center;
+bottom:0;
+} */
+
+footer{
+    position: absolute;
+    background-color: rgb(117, 219, 227);
+    height: auto;
+    width: 100vw;
+    font-family: 'Cabin', sans-serif;
+    padding-top: 40px;
+    color: rgb(13, 19, 23);
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h4{
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: 'Cabin', sans-serif;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0; 
+    padding-left: 0;
+}
+.socials li{
+    margin: 0 10px ;
+
+}
+.socials a{
+    text-decoration: none;
+    color: lightslategrey;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover{
+    color: rgb(0, 32, 128);
+}
+.footer-bottom{
+    background: rgb(9, 1, 63);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize ;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
 
