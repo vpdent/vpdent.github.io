@@ -101,13 +101,18 @@ html{
       
       }
       
-      .logo{
+      .logo a{
         color: red;
         text-transform: uppercase;
+        text-decoration: none;
         letter-spacing: 5px;
         font-size: 25px;
         padding-top: 15px;
         font-family: 'Langar', cursive;
+      }
+
+      .logo a:hover{
+          color: blue;
       }
       
       .nav-links{
