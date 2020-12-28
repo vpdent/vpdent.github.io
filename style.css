@@ -2,8 +2,9 @@ html{
     scroll-behavior: smooth;
   }
   body{
+        position: relative;
+        /* padding: 0 0 700px 0; */
         margin: 0;
-        padding: 0;
         box-sizing: border-box;
         background-color: rgb(247, 246, 246);
         font-family: 'Cabin', sans-serif;
@@ -95,14 +96,15 @@ html{
         justify-content: space-around;
         align-items: center;
         min-height: 8vh;
-        background-color: aqua;
+        background-color: #7dd5f5;
         font-family: 'Cabin', sans-serif;
         height: 110px;
       
       }
       
       .logo a{
-        color: red;
+        color: #2881b8;
+        text-shadow: darkblue;
         text-transform: uppercase;
         text-decoration: none;
         letter-spacing: 5px;
@@ -129,14 +131,15 @@ html{
       }
       
       .nav-links a{
-        color: blueviolet;
+        color: #2881b8;
+        text-shadow: darkblue;
         text-decoration: none;
         letter-spacing: 3px;
         font: bold;
         font-size: 14px;
       }
       nav a:hover{
-        color: salmon;
+        color: rgb(114, 241, 250);
     }
       .burger{
         display: none;
@@ -145,7 +148,7 @@ html{
       .burger div{
         width: 25px;
         height: 5px;
-        background-color: blueviolet;
+        background-color: #2881b8;
         margin: 5px;
         transition: all 0.3s ease;
       }
@@ -158,13 +161,14 @@ html{
       @media screen and (max-width: 768px){
           body{
             overflow-x: hidden;
+            /* padding: 0 0 700px 0; */
           }
           .nav-links{
             position: absolute;
             right: 0px;
             height: 92vh;
             top: 8vh;
-            background-color: aqua;
+            background-color: #7dd5f5;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -357,11 +361,15 @@ color: black;
     
   }
   .mm{
+      color: #2881b8;
+      text-shadow: darkblue;
       font-weight: 500;
       float: left;
       font-size: 14px;
   }
   .gg{
+    color: #2881b8;
+    text-shadow: darkblue;
       font-weight: bold;
       float: right;
       font-size: 14px;
@@ -387,8 +395,10 @@ color: black;
   
   h6{
       margin-left: 7.5%;
-      font-weight: 500;
+      font-weight: bold;
       font-family:'Cabin', sans-serif;
+      color: #1e638e;
+      text-shadow: darkblue;
       font-size: 19px;
   }
 
@@ -526,6 +536,9 @@ h3{
     height: 400px;
     font-size: 18px;
 }
+#protezesanasSlaids{
+    height: 800px;
+}
 .text2{
     height: 300px;
     font-size: 20px;
@@ -533,7 +546,7 @@ h3{
 
 #higiena{
     margin-top: 60px;
-    text-align: center;
+    padding-left: 20px;
     color: rgb(89, 153, 210);
     line-height: 200%;
 }
@@ -555,12 +568,16 @@ h3{
         margin-top: 40px;
     }
     #balinasana{
-        line-height: normal;
+        height: 560px;
+        line-height: 200%;
         font-size: 14px;
     }
     #vp4{
         width: 25%;
   
+    }
+    #protezesanasSlaids{
+        height: 705px;
     }
     .ff{
         display: none;
@@ -587,6 +604,15 @@ h3{
     }
 
 }
+
+@media (max-width: 428px) {
+    #protezesanasSlaids{
+        height: 1050px;
+    }
+    #balinasana{
+        height: 1050px;
+    }
+  }
 
 /* 
 
@@ -840,7 +866,10 @@ bottom:0;
 
 footer{
     position: absolute;
-    background-color: rgb(117, 219, 227);
+    bottom: 0;
+    /* right: 0;
+    left: 0; */
+    background-color: #7dd5f5;
     height: auto;
     width: 100vw;
     font-family: 'Cabin', sans-serif;
@@ -909,3 +938,48 @@ footer{
     font-weight: 200;
 }
 
+
+@media (max-width: 768px) {
+   /* footer{
+       position: absolute;
+   } */
+  }
+
+  @media (max-width: 428px) {
+   
+
+  }
+
+/* MODAL */
+
+/* .modal{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    padding-top: 100px;
+}
+
+.modal.modal-show{
+    display: block;
+}
+
+.modal-content{
+    background-color: blueviolet;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 20px;
+    align-items: flex-start;
+}
+
+.close{
+    align-self: flex-end;
+    padding-top: 4px 10px;
+    font-size: 26px;
+
+} */

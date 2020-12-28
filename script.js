@@ -1,11 +1,4 @@
-// const toggleButton = document.getElementsByClassName('toggle-button')[0]
-//   const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-//   toggleButton.addEventListener('click', () => {
-//       navbarLinks.classList.toggle('active')
-//   })
-
-  mybutton = document.getElementById("myBtn");
+mybutton = document.getElementById("myBtn");
       
       window.onscroll = function() {scrollFunction()};
     
@@ -52,9 +45,63 @@
         burger.classList.toggle('toggle');
       });
     
-     
-    
       
     }
     
     navSlide();
+
+  // const announceDeliveryCosts = (location, amount) => {
+
+  //   if (location === "USA"){
+  //     console.log(`Yours shipping will be ${amount} USD`)
+  //   }else{
+  //     console.log(`Yours shipping will be ${amount} EUR`)
+  //   }
+  // }
+
+  // const finalizeDeliveryInfo = (location, amount) => {
+
+  //   if (location === "USA" || location === "EU"){
+  //     announceDeliveryCosts(location, amount)
+      
+  //   }else{
+  //     console.log(`sorry, we don't deliver to ${location}`)
+  //   }
+  // }
+
+  // finalizeDeliveryInfo("USA", 200);
+
+  //MODAL
+
+  // const btns = document.querySelectorAll(".btn");
+
+  // const modal = document.querySelector(".modal");
+
+  // const close = document.querySelector(".close");
+  // const modalConcertInfo = document.querySelector(".concert-details")
+
+  // const showConcertInfo = (event) => {
+
+  //   // console.log(event);
+    
+  //   const contentToBeDisplayed = event.target.previousElementSibling.innerHTML;
+
+  //   modalConcertInfo.innerHTML = contentToBeDisplayed;
+  // }
+
+  // btns.forEach((btn) => {
+
+  //   btn.addEventListener("click", (event) => {
+
+  //     event.preventDefault();
+  //     modal.classList.add("modal-show");
+
+  //     showConcertInfo(event);
+  //   })
+  // })
+
+  // close.addEventListener("click", () => {
+  //   modal.classList.remove("modal-show");
+
+  // })
+
