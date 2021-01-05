@@ -277,7 +277,7 @@ z-index: 99;
 font-size: 18px;
 border: none;
 outline: none;
-background-color: #290f70;
+background-color: #7dd5f5;
 color: white;
 cursor: pointer;
 padding: 15px;
@@ -721,24 +721,6 @@ h3{
     }
   }
 
-  #santa{
-      width: 10%;
-  }
-  #deer{
-      width: 10%;
-  }
-
-  @media (max-width: 768px){
-    #santa{
-        margin-left: 10px;
-    }
-    #deer{
-        margin-right: 10px;
-      
-    }
-  }
-
-
   @media (max-width: 768px){
 
     /* th .virsraksts{
@@ -805,7 +787,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(151, 232, 250);
+    background-color:#7dd5f5;
     width: 400px;
     margin: 0 auto 100px auto;
     border-radius: 8px;
@@ -826,7 +808,7 @@ h3{
   }
   
   .btn:hover{
-    background-color: blue;
+    background-color: #7dd5f5;
   }
 
   .imageForForm{
