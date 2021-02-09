@@ -459,7 +459,7 @@ color: black;
     }
     #gjen{
         max-width: 100%;
-        height: auto;
+        max-height: 100%;
     }
     #comp{
         height: 300px;
@@ -973,3 +973,7 @@ footer{
     font-size: 26px;
 
 } */
+
+.sponsor-table{
+border: 5px;
+}
